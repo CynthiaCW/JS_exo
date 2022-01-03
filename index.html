@@ -10,7 +10,7 @@
 	<body>
 		<header>
 		  	<div id="logo">
-		    	<img src="jsIcon.jpg" alt="logo" id="monImage"/>
+		    	<img src="image/kisspng-javascript-logo-html-clip-art-javascript-logo-5b5188b1a2a1f9.2428698915320700656662.png" alt="logo" id="monImage"/>
 		  	</div>
 	</header>
 
@@ -39,7 +39,7 @@
 		var taxe = 2
 
 		console.log ("prix total: "+(prix+taxe)+"$")
-		
+
 		console.log ("prix total:",prix+taxe+"$")
 
 		/*
@@ -49,6 +49,103 @@
 		- : Soustration 
 		+ : Addition
 		*/
+
+		let age = 18
+
+		if (age>18){
+			console.log("MAJEUR.E", "🚗")
+		}else {
+			console.log("MINEUR.E", "🎿")
+		}
+		
+		/*
+		Opérateurs de comparaison:
+		>  strictement sup
+		<  strictement inf
+		<= inférieur ou egal
+		>= superieur ou égal
+		*/
+		
+		let codePromo = "CCI"
+		let saisieClient = "CCI"
+		let prixTotal = 23
+
+		if (codePromo == saisieClient ) {
+			prixTotal = prixTotal-2
+			console.log("Code promo valide, Yeaaah")
+		}
+			console.log("prixTotal > ", prixTotal)
+		
+		let permis = true
+
+		if (permis) {
+			console.log("Le permis","🚗")
+		}else {
+			console.log("Pas le permis","🛹")
+		}
+		
+
+		let isAdmin = false
+
+		if(isAdmin!=true){
+			console.log("pas admin")
+		}
+
+		let prixVelo = 800
+		let budget = 800
+		let isOpen = true
+
+		if (isOpen) {
+			if(budget>=prixVelo) {
+				console.log("new bike day !")
+			}else{
+				console.log("economisons encore")
+			}
+		}else {
+			console.log("on reste à la maison")
+		}
+
+		/* Opérateurs logiques | AND | && */
+
+		let prixVelox = 700
+		let budgetx = 800
+		let isOpenx = false
+
+		if(budgetx>=prixVelox && isOpenx==true) {
+			console.log("new bike day !")
+		} else{
+			console.log("economisons encore")
+		}
+		
+
+		/* Opérateurs logiques OR || */
+
+		let isDirector = true
+
+		if(budget>=prixVelo || isDirector) {
+			console.log("new bike day !")
+		}else {
+			console.log("Pas le budget et en plus pas directeur")
+		}
+		
+	let logoDiv = document.getElementById("logo")
+		console.log(logoDiv)
+		logoDiv.style.padding = "90px"
+		logoDiv.style.backgroundColor = "rgb(176, 248, 248)"
+		logoDiv.style.borderRadius = "15px"
+		logoDiv.style.boxShadow = "rgb(52, 185, 174) 5px 5px 5px"
+/*
+	let divColor = prompt("votre couleur préféré")
+
+	logoDiv.style.backgroundColor = divColor
+
+	*/
+
+	let monImage = document.getElementById("monImage")
+		monImage.src = "./image/logojs.png"
+		monImage.style.height ="200px"
+	
+
 
 
 	</script>
